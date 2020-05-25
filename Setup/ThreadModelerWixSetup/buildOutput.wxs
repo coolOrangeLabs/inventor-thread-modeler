@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="INSTALLFOLDER">
+            <Component Id="cmp17F317F3B29DC444A1747D8270D1742C" Guid="*">
+                <File Id="fil203B1145C39613A695DA5653C74DA7A0" KeyPath="yes" Source="$(var.OutputHarvestPath)\PackageContents.xml" />
+            </Component>
+            <Directory Id="dir97876F8F53187814DA9C036CB67DE3B6" Name="Contents">
+                <Component Id="cmp4B1C256617851507771AF524D8959F16" Guid="*">
+                    <File Id="fil2342A53B3CF36B3A040126FA80BDA14B" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\coolOrange.ThreadModeler.Inventor.addin" />
+                </Component>
+                <Component Id="cmpE55AE287F3CB154D811353507EE96D51" Guid="*">
+                    <File Id="filC8EDA11CBC2004603F2AB5C5088DAFAD" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\log4net.dll" />
+                </Component>
+                <Component Id="cmp46EAB771EE7209111622311E905D96D3" Guid="*">
+                    <File Id="fil349DBF2D8957F2F31A8FD295D24AA2A5" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\ThreadModeler.dll" />
+                </Component>
+                <Component Id="cmp763E2E7C9E0C5EA4A8458B97663FA2C3" Guid="*">
+                    <File Id="filE562BCB646520ACC0E8A02915DD7BDEC" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\ThreadModeler.dll.config" />
+                </Component>
+                <Component Id="cmpC4299EB9A8C3E34C112EC7C58C4AD78A" Guid="*">
+                    <File Id="filEE13A10463B4FEC7C9CAC71E15E3725E" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\ThreadModeler.dll.log4net" />
+                </Component>
+                <Directory Id="dir18614EE9370BD8396881332F687B11FD" Name="Thread Templates">
+                    <Component Id="cmp1B4646BFA83CF9DF48B642F05D137CD3" Guid="*">
+                        <File Id="fil9F2E0CFBF707D955F72722F02FF3201A" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\Thread Templates\BSW Template.ipt" />
+                    </Component>
+                    <Component Id="cmp9C130A92F308D4609DA04D7CDD4AC519" Guid="*">
+                        <File Id="fil79D238F5A3ADF10B5591DE6425FFFFBF" KeyPath="yes" Source="$(var.OutputHarvestPath)\Contents\Thread Templates\ISO Template.ipt" />
+                    </Component>
+                </Directory>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+    <Fragment>
+        <ComponentGroup Id="THREADMODELER_OUTPUT">
+            <ComponentRef Id="cmp17F317F3B29DC444A1747D8270D1742C" />
+            <ComponentRef Id="cmp4B1C256617851507771AF524D8959F16" />
+            <ComponentRef Id="cmpE55AE287F3CB154D811353507EE96D51" />
+            <ComponentRef Id="cmp46EAB771EE7209111622311E905D96D3" />
+            <ComponentRef Id="cmp763E2E7C9E0C5EA4A8458B97663FA2C3" />
+            <ComponentRef Id="cmpC4299EB9A8C3E34C112EC7C58C4AD78A" />
+            <ComponentRef Id="cmp1B4646BFA83CF9DF48B642F05D137CD3" />
+            <ComponentRef Id="cmp9C130A92F308D4609DA04D7CDD4AC519" />
+        </ComponentGroup>
+    </Fragment>
+</Wix>

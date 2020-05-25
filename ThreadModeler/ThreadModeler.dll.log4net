@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- This section contains the log4net configuration settings -->
+<log4net>
+
+  <!-- Define some output appenders -->
+  <appender name="OutputDebugStringAppender"
+            type="log4net.Appender.OutputDebugStringAppender" >
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%date [%thread] %-5level %logger - %message%newline" />
+    </layout>
+  </appender>
+  <appender name="rollingFile" type="log4net.Appender.RollingFileAppender,log4net">
+      <param name="File" type="log4net.Util.PatternString" value="%property{LogFileName}.log" />
+      <param name="AppendToFile" value="false" />
+      <param name="RollingStyle" value="Size" />
+      <param name="MaximumFileSize" value="5mb" />
+      <param name="MaxSizeRollBackups" value="5" />
+      <!-- how many files like log.txt.1 are kept? -->
+      <param name="StaticLogFileName" value="true" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date [%thread] %-5level %logger - %message%newline" />
+      </layout>
+  </appender>
+
+
+	<logger name = "ThreadModeler">
+		<level value="ERROR" />
+		<appender-ref ref="rollingFile" />
+		<appender-ref ref="OutputDebugStringAppender" />
+	</logger>
+</log4net>

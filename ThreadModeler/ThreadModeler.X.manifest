@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
+  <assemblyIdentity name="ThreadModeler" version="1.0.0.0" />
+  <clrClass clsid="{90f6009a-a2ed-400f-9cbd-cee55ad30d23}" 
+		progid="ThreadModeler.Addin.StandardAddInServer" 
+		threadingModel="Both" 
+		name="ThreadModeler.Addin.StandardAddInServer" 
+		runtimeVersion="" />
+  <file name="ThreadModeler.dll" hashalg="SHA1"></file>
+</assembly>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" AutodeskProduct="Inventor" ProductType="Application" Name="coolOrange threadModeler" AppVersion="19.0.8 " Description="Thread Modeler automates the generation of modeled threads based on Autodesk Inventor's thread feature." Author="coolOrange s.r.l" Icon="./Contents/Documentation/Resources/resized_icon2.ico" AppNameSpace="appstore.exchange.autodesk.com" OnlineDocumentation="www.coolorange.com" HelpFile="./Contents/Documentation/coolOrangethreadModeler.html" ProductCode="{08F2EA69-9156-4891-9F54-8BD16719819B}" UpgradeCode="{87CF466A-9CB2-464D-B971-1B6EB514A727}" SupportedLocales="Enu" FriendlyVersion="19.0.8 ">
+  <CompanyDetails Name="coolOrange s.r.l" Url="www.coolorange.com" Email="support@coolorange.com" />
+  <Components Description="Contents parts">
+    <RuntimeRequirements OS="Win32|Win64" Platform="AIP"/>
+    <ComponentEntry AppName="coolOrangethreadModeler" Version="19.0.8 " ModuleName="./Contents/coolOrange.ThreadModeler.Inventor.addin" AppDescription="Thread Modeler automates the generation of modeled threads based on Autodesk Inventor's thread feature." />
+    <ComponentEntry AppName="coolOrangethreadModeler" Version="19.0.8 " ModuleName="./Contents/log4net.dll" AppDescription="Thread Modeler automates the generation of modeled threads based on Autodesk Inventor's thread feature." />
+    <ComponentEntry AppName="coolOrangethreadModeler" Version="19.0.8 " ModuleName="./Contents/Log4PostSharp.dll" AppDescription="Thread Modeler automates the generation of modeled threads based on Autodesk Inventor's thread feature." />
+    <ComponentEntry AppName="coolOrangethreadModeler" Version="19.0.8 " ModuleName="./Contents/PostSharp.dll" AppDescription="Thread Modeler automates the generation of modeled threads based on Autodesk Inventor's thread feature." />
+    <ComponentEntry AppName="coolOrangethreadModeler" Version="19.0.8 " ModuleName="./Contents/ThreadModeler.dll" AppDescription="Thread Modeler automates the generation of modeled threads based on Autodesk Inventor's thread feature." />
+  </Components>
+</ApplicationPackage>
